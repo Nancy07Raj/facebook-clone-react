@@ -1,0 +1,31 @@
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catagories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  margin-top: 70px;
+  div {
+    @include flex-row-center();
+    h3 {
+      text-align: center;
+      font-size: 15px;
+      letter-spacing: 0.8px;
+    }
+  }
+  .friends {
+    @include flex-row-center();
+    // background-color: brown;
+    span {
+      color: blue;
+      margin: 0 8px;
+      font-size: 20px;
+    }
+  }
+}

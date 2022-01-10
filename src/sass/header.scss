@@ -1,0 +1,89 @@
+@mixin flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 2px gray;
+  width: 100%;
+  height: 50px;
+  .searchBar {
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: #eef2ff;
+    .searchIcon {
+      // display: inline-block;
+      // border-radius: 15px 0 0 15px;
+      // background-color: #eef2ff;
+      font-size: 15px;
+      color: gray;
+      width: 30px;
+      height: 100px;
+      height: 20px;
+      padding: 5px 15px;
+    }
+  }
+  .fb {
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  .headerIcon {
+    margin: 0 15px;
+    @include flex-row-center();
+    // display: flex;
+    // justify-content: center;
+    div {
+      font-size: 25px;
+      margin: 40px 35px;
+      color: #92a9bd;
+      padding: 10px;
+      // background-color: cadetblue;
+      &:hover {
+        color: blue;
+        border-bottom: 3px solid blue;
+      }
+    }
+  }
+  .header-right {
+    @include flex-row-center();
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    div {
+      @include flex-row-center();
+      // display: flex;
+      // justify-content: center;
+      h3 {
+        font-size: 15px;
+        // font-weight: 200px;
+        font-family: inherit;
+      }
+    }
+    .rightIcon {
+      display: flex;
+      justify-content: center;
+      margin-left: 25px;
+      margin-right: 5px;
+      .AvatarDiv {
+        @include flex-row-center();
+        // display: flex;
+        // justify-content: center;
+      }
+      div {
+        margin: 0 5px;
+        border-radius: 25px;
+        background-color: #eef2ff;
+        font-size: 17px;
+        padding: 10px;
+        // width: 20px;
+      }
+    }
+  }
+}
