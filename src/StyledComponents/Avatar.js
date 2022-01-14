@@ -6,7 +6,7 @@ const Avatar = styled.img.attrs(props=>({
 border-radius: 20px;
 height:30px;
 width: 30px;
-margin: 5px 10px;
+margin: ${(props)=> props.margin? props.margin : '5px' };
 box-shadow:1px 1px 0px white;
 border: 1px solid #FFF8F3;
 `

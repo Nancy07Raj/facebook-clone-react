@@ -4,6 +4,7 @@ import {Provider} from 'react-redux'
 import store from '../redux/store'
 import '../sass/App.scss'
 import Catagories from './catagories';
+import NewsFeed from './NewsFeed';
 
 function App(){
     return(<Provider store={store}>
@@ -11,6 +12,7 @@ function App(){
         <Header />
         <div className='bodyContainer'>
         <Catagories />
+        <NewsFeed />
         </div>
     </div>
     </Provider>)

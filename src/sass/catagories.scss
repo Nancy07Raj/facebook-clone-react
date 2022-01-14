@@ -1,31 +1,53 @@
+$fbBlue: #1597e5;
+
 @mixin flex-row-center {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  // flex-direction: column;
   align-items: center;
+  margin: 0 5px;
 }
 
 .catagories {
-  display: flex;
+  @include flex-row-center();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
+  margin: 0 5px;
   margin-top: 70px;
   div {
     @include flex-row-center();
-    h3 {
-      text-align: center;
-      font-size: 15px;
-      letter-spacing: 0.8px;
+    min-width: 200px;
+    margin: 0 8px;
+    padding: 8px;
+    // background-color: hotpink;
+    &:hover {
+      background-color: #cddeff;
     }
-  }
-  .friends {
-    @include flex-row-center();
-    // background-color: brown;
+    H3 {
+      margin: 0 15px;
+    }
     span {
-      color: blue;
-      margin: 0 8px;
-      font-size: 20px;
+      min-width: 20px;
+      font-size: 22px;
+      color: $fbBlue;
+      // background-color: greenyellow;
+    }
+    .groups {
+      font-size: 15px;
+      padding: 5px;
+      background-color: $fbBlue;
+      color: white;
+      border-radius: 20px;
+    }
+    .tag {
+      color: #e900ff;
+    }
+    .flag,
+    .jobs {
+      color: #ffbd35;
+    }
+    .arrow {
+      color: black;
+      font-size: 12px;
     }
   }
 }

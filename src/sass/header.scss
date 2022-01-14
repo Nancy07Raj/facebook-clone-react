@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
 }
+$fbBlue: #1597e5;
 
 .header {
   display: flex;
@@ -18,9 +19,6 @@
     border-radius: 20px;
     background-color: #eef2ff;
     .searchIcon {
-      // display: inline-block;
-      // border-radius: 15px 0 0 15px;
-      // background-color: #eef2ff;
       font-size: 15px;
       color: gray;
       width: 30px;
@@ -55,6 +53,7 @@
     // display: flex;
     // justify-content: center;
     align-items: center;
+    // float: right;
     margin-left: 60px;
     div {
       @include flex-row-center();

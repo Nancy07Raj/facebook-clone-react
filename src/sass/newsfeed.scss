@@ -1,0 +1,80 @@
+$fbBlue: #1597e5;
+@mixin flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 130px;
+  margin-top: 70px;
+}
+.story {
+  @include flex-row();
+  background-color: white;
+  min-width: 600px;
+  min-height: 60px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 8px;
+  span {
+    font-size: 18px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: #d6e5fa;
+    padding: 10px;
+    min-width: 20px;
+    max-height: 20px;
+    text-align: center;
+    color: $fbBlue;
+  }
+
+  .storyH {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .share {
+      margin: 2px 0;
+      color: #2c272e;
+      font-weight: 100;
+    }
+    h3 {
+      margin: 2px 0;
+      letter-spacing: 0.7px;
+      font-weight: 600;
+    }
+  }
+}
+.onmind {
+  @include flex-row();
+  flex-direction: column;
+  background-color: white;
+  margin: 20px 50px;
+  min-width: 450px;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 8px;
+  .comment {
+    @include flex-row();
+    margin: 10px;
+  }
+  hr {
+    width: 450px;
+    color: #d9d7f1;
+  }
+  .picVideo {
+    @include flex-row();
+    div {
+      @include flex-row();
+      margin: 0 10px;
+      span {
+        margin: 0 10px;
+        font-size: 25px;
+      }
+    }
+  }
+}

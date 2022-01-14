@@ -17,6 +17,11 @@ const initialValue = {
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhOkAMhuTO0dmCV4LVdJkp54xG9gHcEgLJQ&usqp=CAU'
         },
     }],
+    newsfeed: {
+        img1: 'https://scontent.fmaa1-1.fna.fbcdn.net/v/t39.30808-6/271814960_5028014397262244_3628416469630599036_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=9267fe&_nc_ohc=SB2TgkFVG3kAX9KNaxp&_nc_ht=scontent.fmaa1-1.fna&oh=00_AT94cs_IWeDTOAUebj_7mPq5a02BTDcsHAKIwtnckaueNA&oe=61E523F9',
+        img2: 'https://scontent.fmaa1-4.fna.fbcdn.net/v/t39.30808-6/p526x296/270042879_3117179981941750_4976464766257866658_n.png?_nc_cat=1&ccb=1-5&_nc_sid=730e14&_nc_ohc=SKFiJ1a8HxMAX_pa-vy&_nc_ht=scontent.fmaa1-4.fna&oh=00_AT_fE5xlZGwR2qqRq9pTYD4766T_dIuJuO4pHYfyXdkKsQ&oe=61E646DC',
+        img3: 'https://scontent.fmaa1-4.fna.fbcdn.net/v/t39.30808-6/p526x296/271660815_3196857083875670_4912592207311900645_n.jpg?_nc_cat=1&_nc_rgb565=1&ccb=1-5&_nc_sid=9267fe&_nc_ohc=oxFG9yWqEQwAX9r-CGv&_nc_ht=scontent.fmaa1-4.fna&oh=00_AT_gWT71HKjUSCjGdUlk-jq3lOcM09_FTonXQlhcFW28jw&oe=61E510CB',
+    }
 
 }
 
