@@ -12,7 +12,6 @@ $fbBlue: #1597e5;
   @include flex-row-center();
   flex-direction: column;
   margin: 0 5px;
-  margin-top: 70px;
   div {
     @include flex-row-center();
     min-width: 200px;

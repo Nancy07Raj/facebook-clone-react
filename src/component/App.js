@@ -8,13 +8,13 @@ import NewsFeed from './NewsFeed';
 
 function App(){
     return(<Provider store={store}>
-    <div className='fbcontainer'>
+    <>
         <Header />
         <div className='bodyContainer'>
         <Catagories />
         <NewsFeed />
         </div>
-    </div>
+    </>
     </Provider>)
 }
 

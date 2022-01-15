@@ -11,7 +11,6 @@ $fbBlue: #1597e5;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0 130px;
-  margin-top: 70px;
 }
 .story {
   @include flex-row();
@@ -61,11 +60,10 @@ $fbBlue: #1597e5;
   .comment {
     @include flex-row();
     margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #9692af;
   }
-  hr {
-    width: 450px;
-    color: #d9d7f1;
-  }
+
   .picVideo {
     @include flex-row();
     div {
@@ -74,6 +72,48 @@ $fbBlue: #1597e5;
       span {
         margin: 0 10px;
         font-size: 25px;
+      }
+    }
+  }
+}
+
+.createRoom {
+  @include flex-row();
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  margin: 0 50px;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 8px;
+  .room {
+    @include flex-row();
+    border-radius: 20px;
+    margin: 10px 20px;
+    border: 1px solid #cddeff;
+    padding: 5px;
+    span {
+      margin: 0 10px;
+      font-size: 25px;
+    }
+    H3 {
+      margin: 0 5px;
+    }
+  }
+  .onlineFrnds {
+    @include flex-row();
+    position: absolute;
+    left: 200px;
+    div {
+      position: relative;
+      @include flex-row();
+      span {
+        position: absolute;
+        left: 40px;
+        bottom: 1px;
+        font-size: 8px;
+        color: green;
+        border: 1px solid white;
+        border-radius: 20px;
       }
     }
   }
