@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import {H3, Avatar, SearchBar} from '../StyledComponents/styles'
+import News from './News'
 import '../sass/newsfeed.scss'
 
 
@@ -47,20 +48,9 @@ function NewsFeed(){
             <span><i class="fas fa-circle"></i></span>
             </div>)
         })}
-        
-             {/* <div>
-             <Avatar src={friends.frnd1.img} margin='0 10px' />
-             <span><i class="fas fa-circle"></i></span>
-             </div>
-             <div>
-             <Avatar src={friends.frnd2.img} margin='0 10px' />
-             </div>
-             <div>
-             <Avatar src={friends.frnd3.img} margin='0 10px' />
-             </div>  */}
         </div>
-
         </div>
+        <News />
     </div>)
 
 }

@@ -1,0 +1,39 @@
+@mixin flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.newsCard {
+  margin: 10px 50px;
+  @include flex-row();
+  flex-direction: column;
+  background-color: white;
+  min-width: 500px;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 8px;
+  .sender {
+    @include flex-row();
+    min-width: 500px;
+    border-bottom: 1px solid gray;
+    H3 {
+      margin: 0;
+    }
+    .sname {
+      @include flex-row();
+      flex-direction: column;
+      margin: 5px;
+      div {
+        @include flex-row();
+        align-items: flex-start;
+        h5,
+        span {
+          margin: 0 5px;
+          color: #6e7582;
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
