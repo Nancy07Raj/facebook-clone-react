@@ -1,7 +1,6 @@
 import React from 'react';
-import FriendCard from './FriendCard';
 import '../sass/StoryCard.scss'
-import {Card} from '../StyledComponents/styles'
+import {Card, Avatar} from '../StyledComponents/styles'
 import {useSelector} from 'react-redux'
 
 function StoryCard(){
@@ -16,7 +15,8 @@ function StoryCard(){
     </div>
     {friends.map(data=>(
         <Card>
-        <img src={data.frnd.card} alt='card' />
+        <img className='cardImg' src={data.frnd.card} alt='card' />
+        {/* <Avatar src={data.frnd.img} /> */}
         <h4>{data.frnd.name}</h4>
     </Card>
     ))}

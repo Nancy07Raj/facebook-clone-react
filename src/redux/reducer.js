@@ -22,8 +22,18 @@ const initialValue = {
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhOkAMhuTO0dmCV4LVdJkp54xG9gHcEgLJQ&usqp=CAU',
             card: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpDiEszcVPZk4paSBhNlCIfYT9cdg9kmaSw&usqp=CAU',
             post: 'https://scontent.fmaa1-4.fna.fbcdn.net/v/t39.30808-6/p526x296/271660815_3196857083875670_4912592207311900645_n.jpg?_nc_cat=1&_nc_rgb565=1&ccb=1-5&_nc_sid=9267fe&_nc_ohc=oxFG9yWqEQwAX9r-CGv&_nc_ht=scontent.fmaa1-4.fna&oh=00_AT_gWT71HKjUSCjGdUlk-jq3lOcM09_FTonXQlhcFW28jw&oe=61E510CB'
-        },
-    }],
+        }},
+        {
+            frnd:{
+                name: 'Rathna',
+                img:'https://thumbs.dreamstime.com/b/beautiful-brunette-woman-as-silver-fairy-night-sky-wings-magic-wand-29957935.jpg',
+                post:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQJSlT5pr2NXsESdZ0PgPvmapREVztL9dHlw&usqp=CAU',
+                card:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSru0_Gb9lbLmlcLpWmu3LQb8mfasXPXCQ4Gg&usqp=CAU',
+
+            }
+
+        }
+    ],
 }
 
 const reducer =(state=initialValue,action)=>{
