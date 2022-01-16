@@ -9,7 +9,7 @@ border: none;
 background-color: #EEF2FF;
 margin-left: 10px;
 margin-right: 20px;
-height: 20px;
+height: ${(props)=> props.height? props.height : '20px'};
 padding: ${(props)=> props.padding? props.padding : '10px 10px 10px 0'};
 font-size: 15px;
 width: ${(props)=> props.width? props.width : '150px' };

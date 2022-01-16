@@ -20,7 +20,7 @@ function NewsFeed(){
         <div className='onmind'>
         <div className='comment'>
         <Avatar src={owner.img} margin='10px 0' />
-        <SearchBar placeholder="What's On Your Mind, Nancy?" radius="20px" width='400px' padding='10px'/>
+        <SearchBar placeholder="What's on Your Mind, Nancy?" radius="20px" width='400px' padding='10px'/>
         </div>
         <div className='picVideo'>
         <div>
@@ -28,7 +28,7 @@ function NewsFeed(){
         <H3>Live Video</H3>
         </div>
         <div>
-           <span ><i style={{color:'#55E0A3'}} class="fas fa-images"></i></span> 
+           <span ><i style={{color:'#55E0A3'}} class="fas fa-images"></i></span>
            <H3>Photos/Videos</H3>
         </div>
         <div>

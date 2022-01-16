@@ -19,7 +19,19 @@ function News(){
         </div>
         </div>
         <div>
-            <img src={data.frnd.post} height='500px' width='500px'/>
+            <img src={data.frnd.post} alt='post' height='500px' width='500px'/>
+        </div>
+        <div className='share'>
+            <span><i class="fas fa-thumbs-up"></i></span>
+            <div className='text'>
+            <h5>23 comments</h5>
+            <h5>14 shares</h5>
+            </div>
+        </div>
+        <div className='icons'>
+        <span><i class="far fa-thumbs-up"></i><H3>Like</H3></span>
+        <span><i class="far fa-comment-alt"></i><H3>Comment</H3></span>
+        <span><i class="fas fa-share"></i><H3>Share</H3></span>
         </div>
 
     </div>)

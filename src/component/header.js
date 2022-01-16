@@ -13,7 +13,7 @@ function Header(){
         <span className='fb'><a href='#'><i class="fab fa-facebook"></i></a></span>
         <div className="searchBar">
         <span className='searchIcon'><i class="fas fa-search"></i></span>
-        <SearchBar placeholder='Search Facebook' />
+        <SearchBar placeholder='Search Facebook' height='15px' />
         </div>
         <div className='headerIcon'>
         {/* <img src="https://img.icons8.com/material-outlined/24/000000/home--v2.png"/> */}

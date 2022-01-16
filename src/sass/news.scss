@@ -1,3 +1,4 @@
+$fbBlue: #1597e5;
 @mixin flex-row {
   display: flex;
   justify-content: flex-start;
@@ -15,7 +16,7 @@
   .sender {
     @include flex-row();
     min-width: 500px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d3dedc;
     H3 {
       margin: 0;
     }
@@ -33,6 +34,53 @@
           font-size: 12px;
           font-weight: 300;
         }
+      }
+    }
+  }
+  .share {
+    @include flex-row();
+    margin: 0 20px;
+    border-bottom: 1px solid #d3dedc;
+    min-width: 400px;
+    span {
+      margin: 5px 20px;
+      background-color: $fbBlue;
+      border-radius: 25px;
+      padding: 5px;
+      width: 15px;
+      text-align: center;
+      height: 15px;
+      color: white;
+      font-size: 13px;
+    }
+    .text {
+      @include flex-row();
+      margin: 5px 0;
+      margin-left: 230px;
+      h5 {
+        font-weight: 200;
+        margin: 0 3px;
+        margin-right: 10px;
+      }
+    }
+  }
+  img {
+    margin-bottom: 0;
+  }
+  .icons {
+    @include flex-row();
+    align-items: center;
+    margin: 10px;
+    span {
+      @include flex-row();
+      margin: 0 40px;
+      H3 {
+        margin: 0 5px;
+        color: gray;
+      }
+      i {
+        color: gray;
+        font-size: 20px;
       }
     }
   }
