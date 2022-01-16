@@ -1,0 +1,58 @@
+$fbBlue: #1597e5;
+@mixin flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+%card {
+  min-height: 180px;
+  min-width: 120px;
+  box-shadow: 1px 1px 2px gray;
+  border-radius: 8px;
+  margin: 0 5px;
+}
+
+.storycard {
+  @include flex-row();
+}
+
+.ownercard {
+  @include flex-row();
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  @extend %card;
+  img {
+    height: 160px;
+    width: 130px;
+  }
+  span {
+    position: absolute;
+    font-size: 18px;
+    top: 140px;
+    left: 45px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    background-color: $fbBlue;
+    padding: 5px;
+    min-width: 20px;
+    max-height: 20px;
+    text-align: center;
+    color: white;
+  }
+
+  h4 {
+    margin: 5px 25px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+.friendcard {
+  @include flex-row();
+  flex-direction: column;
+  @extend %card;
+  background-color: #333;
+}

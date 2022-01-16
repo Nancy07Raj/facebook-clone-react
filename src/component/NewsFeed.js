@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import {H3, Avatar, SearchBar} from '../StyledComponents/styles'
 import News from './News'
+import StoryCard from './StoryCard';
 import '../sass/newsfeed.scss'
 
 
@@ -10,13 +11,14 @@ function NewsFeed(){
     const friends = useSelector(state => state.friends);
 
     return(<div className='news'>
-        <div className='story'>
+        <StoryCard />
+        {/* <div className='story'>
             <span><i class="fas fa-plus"></i></span>
             <div className='storyH'>
             <h3>Create Story</h3>
             <H3 className='share'>Share a photo or write something </H3>
             </div>
-        </div>
+        </div> */}
         <div className='onmind'>
         <div className='comment'>
         <Avatar src={owner.img} margin='10px 0' />
