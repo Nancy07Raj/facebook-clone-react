@@ -7,7 +7,8 @@ import { useSelector } from 'react-redux'
 function Catagories(){
     const ownerImg = useSelector(state=>state.owner.img)
     const ownerName= useSelector(state=> state.owner.name)
-    return(<div className='catagories'>
+    return(<div className='catagoriesContainer'>
+        <div className='catagories'>
         <div>
             <Avatar src={ownerImg} />
             <H3>{ownerName}</H3>
@@ -52,6 +53,9 @@ function Catagories(){
             <span className='arrow'><i class="fas fa-chevron-down"></i></span>
             <H3>See More</H3>
         </div>
+        <hr />
+        <div className='h4div'><h4>Your Shortcuts</h4></div>
+    </div>
     </div>)
 }
 

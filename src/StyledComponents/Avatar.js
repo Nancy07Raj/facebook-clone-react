@@ -9,7 +9,7 @@ width: ${(props=> props.width? props.width: '30px' )};
 margin: ${(props)=> props.margin? props.margin : '5px' };
 box-shadow:1px 1px 0px white;
 border: 1px solid #92A9BD;
-padding: 3px;
+padding: 1px;
 `
 
 export default Avatar

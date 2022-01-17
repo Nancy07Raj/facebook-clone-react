@@ -12,13 +12,6 @@ function NewsFeed(){
 
     return(<div className='news'>
         <StoryCard />
-        {/* <div className='story'>
-            <span><i class="fas fa-plus"></i></span>
-            <div className='storyH'>
-            <h3>Create Story</h3>
-            <H3 className='share'>Share a photo or write something </H3>
-            </div>
-        </div> */}
         <div className='onmind'>
         <div className='comment'>
         <Avatar src={owner.img} margin='10px 0' />

@@ -1,0 +1,100 @@
+@mixin flex-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contactsContainer {
+  @include flex-row();
+  position: fixed;
+  flex-direction: column;
+  margin-left: 1080px;
+  width: 280px;
+  h4 {
+    color: gray;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  hr {
+    width: 280px;
+  }
+}
+.contacts {
+  @include flex-row();
+  flex-direction: column;
+}
+
+.contactIcons {
+  @include flex-row();
+  h4 {
+    margin: 5px 0;
+    margin-left: 10px;
+  }
+  div {
+    margin: 5px 0;
+    margin-left: 90px;
+    margin-right: 10px;
+    i {
+      margin: 5px 10px;
+      color: gray;
+      font-size: 15px;
+    }
+  }
+}
+
+.frndsOnline {
+  @include flex-row();
+  flex-direction: column;
+  div {
+    @include flex-row();
+    align-items: center;
+    position: relative;
+    H3 {
+      margin-left: 5px;
+    }
+    span {
+      position: absolute;
+      left: 30px;
+      bottom: 5px;
+      font-size: 8px;
+      color: green;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+  }
+}
+
+.group {
+  @include flex-row();
+  flex-direction: column;
+  div {
+    @include flex-row();
+    margin: 10px 0;
+    margin-left: 10px;
+    span {
+      font-size: 25px;
+      margin-right: 8px;
+      color: #92a9bd;
+    }
+    h4 {
+      margin: 10px 0;
+    }
+    h3 {
+      margin: 0;
+      margin-left: 5px;
+      font-size: 16px;
+    }
+    .plusIcon {
+      text-align: center;
+      font-size: 13px;
+      border-radius: 20px;
+      background-color: #d3dedc;
+      padding: 5px;
+      min-width: 20px;
+      max-height: 20px;
+      text-align: center;
+      color: #072227;
+    }
+  }
+}
