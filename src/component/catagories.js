@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux'
 
 
 function Catagories(){
-    const ownerImg = useSelector(state=>state.owner.img)
-    const ownerName= useSelector(state=> state.owner.name)
+    const ownerImg = useSelector(state=>state.owner.img);
+    const ownerName= useSelector(state=> state.owner.name);
     return(<div className='catagoriesContainer'>
         <div className='catagories'>
         <div>

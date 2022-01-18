@@ -11,12 +11,13 @@ const Card = Styled.div`
   box-shadow: 1px 1px 2px gray;
   border-radius: 8px;
   margin: 0 5px;
-  background-color: white;
+  background-color: #533535;
 
   .cardImg{
     margin: 0;
     height: 150px;
     width: 110px;
+    object-fit: contain;
     border-radius:8px 8px 0 0;
   }
   .storyAvatar{
@@ -28,8 +29,10 @@ const Card = Styled.div`
   }
   h4 {
     margin: 5px 20px;
-    // margin-top: 20px;
-    font-size: 14px;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
   }
 
 `

@@ -2,7 +2,7 @@ $fbBlue: #1597e5;
 @mixin flex-row {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 %card {
@@ -27,6 +27,7 @@ $fbBlue: #1597e5;
     height: 150px;
     width: 110px;
     border-radius: 8px 8px 0 0;
+    object-fit: cover;
   }
   span {
     position: absolute;
